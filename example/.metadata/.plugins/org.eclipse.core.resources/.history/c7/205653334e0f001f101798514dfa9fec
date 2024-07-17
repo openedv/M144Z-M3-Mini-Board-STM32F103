@@ -1,0 +1,4 @@
+../BSP/TOUCH/gt9xxx.c:40:13:gt9xxx_rd_reg	2
+../BSP/TOUCH/gt9xxx.c:72:16:gt9xxx_wr_reg	3
+../BSP/TOUCH/gt9xxx.c:105:9:gt9xxx_init	6
+../BSP/TOUCH/gt9xxx.c:188:9:gt9xxx_scan	20

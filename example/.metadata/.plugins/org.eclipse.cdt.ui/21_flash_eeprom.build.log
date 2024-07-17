@@ -1,0 +1,10 @@
+14:06:08 **** Incremental Build of configuration Debug for project 21_flash_eeprom ****
+make -j16 all 
+arm-none-eabi-size  21_flash_eeprom.elf 
+   text	   data	    bss	    dec	    hex	filename
+  62276	    788	   4432	  67496	  107a8	21_flash_eeprom.elf
+Finished building: default.size.stdout
+ 
+
+14:06:09 Build Finished. 0 errors, 0 warnings. (took 1s.344ms)
+

@@ -1,0 +1,22 @@
+10:31:34 **** Incremental Build of configuration Debug for project 24_sd ****
+make -j16 all 
+arm-none-eabi-gcc -o "24_sd.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\m144-m3-mini-board-stm32f103\example\24_sd\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="24_sd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 24_sd.elf
+ 
+arm-none-eabi-size  24_sd.elf 
+arm-none-eabi-objdump -h -S 24_sd.elf  > "24_sd.list"
+arm-none-eabi-objcopy  -O ihex 24_sd.elf  "24_sd.hex"
+arm-none-eabi-objcopy  -O binary 24_sd.elf  "24_sd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60652	    504	  46000	 107156	  1a294	24_sd.elf
+Finished building: default.size.stdout
+ 
+Finished building: 24_sd.hex
+Finished building: 24_sd.bin
+Finished building: 24_sd.list
+ 
+ 
+ 
+
+10:31:36 Build Finished. 0 errors, 0 warnings. (took 2s.484ms)
+

@@ -1,0 +1,10 @@
+17:04:44 **** Incremental Build of configuration Debug for project 13_4_lowpower_standby ****
+make -j16 all 
+arm-none-eabi-size  13_4_lowpower_standby.elf 
+   text	   data	    bss	    dec	    hex	filename
+  51128	    484	   2276	  53888	   d280	13_4_lowpower_standby.elf
+Finished building: default.size.stdout
+ 
+
+17:04:45 Build Finished. 0 errors, 0 warnings. (took 1s.606ms)
+

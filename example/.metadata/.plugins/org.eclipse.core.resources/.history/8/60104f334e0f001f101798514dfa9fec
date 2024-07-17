@@ -1,0 +1,6 @@
+../BSP/24CXX/24cxx.c:31:6:at24cxx_init	1
+../BSP/24CXX/24cxx.c:41:9:at24cxx_read_one_byte	1
+../BSP/24CXX/24cxx.c:75:6:at24cxx_write_one_byte	1
+../BSP/24CXX/24cxx.c:108:9:at24cxx_check	3
+../BSP/24CXX/24cxx.c:136:6:at24cxx_read	2
+../BSP/24CXX/24cxx.c:151:6:at24cxx_write	2

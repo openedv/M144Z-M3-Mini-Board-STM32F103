@@ -1,0 +1,23 @@
+14:55:34 **** Incremental Build of configuration Debug for project 27_1_dsp_basicmath ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -DARM_MATH_CM3 -c -I../Core/Inc -I../../../libraries/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../../libraries/Drivers/STM32F1xx_HAL_Driver/Inc -I../../../libraries/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../../libraries/Drivers/CMSIS/Include -I../BSP/LED -I../BSP/KEY -I../BSP/LCD -I../Core/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "27_1_dsp_basicmath.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\m144-m3-mini-board-stm32f103\example\27_1_dsp_basicmath\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="27_1_dsp_basicmath.map" -Wl,--gc-sections -static "E:\m144-m3-mini-board-stm32f103\example\27_1_dsp_basicmath\Core\Lib\GCC\libarm_cortexM3l_math.a" --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 27_1_dsp_basicmath.elf
+ 
+arm-none-eabi-size  27_1_dsp_basicmath.elf 
+arm-none-eabi-objdump -h -S 27_1_dsp_basicmath.elf  > "27_1_dsp_basicmath.list"
+arm-none-eabi-objcopy  -O ihex 27_1_dsp_basicmath.elf  "27_1_dsp_basicmath.hex"
+arm-none-eabi-objcopy  -O binary 27_1_dsp_basicmath.elf  "27_1_dsp_basicmath.bin"
+   text	   data	    bss	    dec	    hex	filename
+  95648	    492	  14636	 110776	  1b0b8	27_1_dsp_basicmath.elf
+Finished building: default.size.stdout
+ 
+Finished building: 27_1_dsp_basicmath.hex
+Finished building: 27_1_dsp_basicmath.bin
+ 
+ 
+Finished building: 27_1_dsp_basicmath.list
+ 
+
+14:55:37 Build Finished. 0 errors, 0 warnings. (took 2s.968ms)
+

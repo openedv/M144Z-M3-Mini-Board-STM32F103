@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;06_wwdg/05_iwdg.ioc&apos; to &apos;06_wwdg.ioc&apos;" description="Rename resource &apos;05_iwdg.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="05_iwdg.ioc" name="06_wwdg.ioc" stamp="1712979623792" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;06_wwdg/04_uart.ioc&apos; to &apos;06_wwdg.ioc&apos;" description="Rename resource &apos;04_uart.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="04_uart.ioc" name="06_wwdg.ioc" stamp="1712979707724" updateReferences="true"/>
+</session>

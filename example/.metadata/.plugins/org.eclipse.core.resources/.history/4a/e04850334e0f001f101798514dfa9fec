@@ -1,0 +1,9 @@
+../BSP/IIC/myiic.c:29:6:iic_init	8	static
+../BSP/IIC/myiic.c:39:13:iic_delay	8	static
+../BSP/IIC/myiic.c:49:6:iic_start	8	static
+../BSP/IIC/myiic.c:65:6:iic_stop	8	static
+../BSP/IIC/myiic.c:81:9:iic_wait_ack	16	static
+../BSP/IIC/myiic.c:113:6:iic_ack	8	static
+../BSP/IIC/myiic.c:130:6:iic_nack	8	static
+../BSP/IIC/myiic.c:145:6:iic_send_byte	24	static
+../BSP/IIC/myiic.c:166:9:iic_read_byte	24	static

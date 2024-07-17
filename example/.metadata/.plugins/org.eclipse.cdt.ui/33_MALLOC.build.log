@@ -1,0 +1,6 @@
+16:19:40 **** Incremental Build of configuration Output for project 33_MALLOC ****
+make -j16 all 
+Command canceled
+
+16:19:53 Build Cancelled. (took 13s.308ms)
+

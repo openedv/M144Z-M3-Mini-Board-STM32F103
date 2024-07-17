@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;09_2_atim_compare/04_uart.ioc&apos; to &apos;09_2_atim_compare.ioc&apos;" description="Rename resource &apos;04_uart.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="04_uart.ioc" name="09_2_atim_compare.ioc" stamp="1712992891337" updateReferences="true"/>
+</session>

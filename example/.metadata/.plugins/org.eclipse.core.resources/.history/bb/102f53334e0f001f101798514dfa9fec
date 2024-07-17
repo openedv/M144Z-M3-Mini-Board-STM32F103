@@ -1,0 +1,4 @@
+../BSP/TOUCH/ft5206.c:34:13:ft5206_rd_reg	32	static
+../BSP/TOUCH/ft5206.c:64:16:ft5206_wr_reg	24	static
+../BSP/TOUCH/ft5206.c:95:9:ft5206_init	40	static
+../BSP/TOUCH/ft5206.c:162:9:ft5206_scan	24	static

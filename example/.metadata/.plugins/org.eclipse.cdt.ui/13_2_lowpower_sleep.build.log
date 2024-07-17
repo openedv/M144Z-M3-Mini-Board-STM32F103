@@ -1,0 +1,22 @@
+16:28:00 **** Incremental Build of configuration Debug for project 13_2_lowpower_sleep ****
+make -j16 all 
+arm-none-eabi-gcc -o "13_2_lowpower_sleep.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\m144-m3-mini-board-stm32f103\example\13_2_lowpower_sleep\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_2_lowpower_sleep.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_2_lowpower_sleep.elf
+ 
+arm-none-eabi-size  13_2_lowpower_sleep.elf 
+arm-none-eabi-objdump -h -S 13_2_lowpower_sleep.elf  > "13_2_lowpower_sleep.list"
+   text	   data	    bss	    dec	    hex	filename
+  51224	    484	   2276	  53984	   d2e0	13_2_lowpower_sleep.elf
+arm-none-eabi-objcopy  -O ihex 13_2_lowpower_sleep.elf  "13_2_lowpower_sleep.hex"
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objcopy  -O binary 13_2_lowpower_sleep.elf  "13_2_lowpower_sleep.bin"
+Finished building: 13_2_lowpower_sleep.list
+Finished building: 13_2_lowpower_sleep.hex
+ 
+ 
+Finished building: 13_2_lowpower_sleep.bin
+ 
+
+16:28:03 Build Finished. 0 errors, 0 warnings. (took 3s.724ms)
+

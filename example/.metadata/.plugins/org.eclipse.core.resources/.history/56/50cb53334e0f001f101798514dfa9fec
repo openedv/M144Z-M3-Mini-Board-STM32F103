@@ -1,0 +1,13 @@
+../BSP/TOUCH/touch.c:51:13:tp_write_byte	3
+../BSP/TOUCH/touch.c:78:17:tp_read_ad	3
+../BSP/TOUCH/touch.c:123:17:tp_read_xoy	6
+../BSP/TOUCH/touch.c:164:13:tp_read_xy	2
+../BSP/TOUCH/touch.c:195:16:tp_read_xy2	9
+../BSP/TOUCH/touch.c:225:13:tp_draw_touch_point	1
+../BSP/TOUCH/touch.c:243:6:tp_draw_big_point	1
+../BSP/TOUCH/touch.c:260:9:tp_scan	6
+../BSP/TOUCH/touch.c:309:6:tp_save_adjust_data	1
+../BSP/TOUCH/touch.c:325:16:tp_get_adjust_data	2
+../BSP/TOUCH/touch.c:352:13:tp_adjust_info_show	2
+../BSP/TOUCH/touch.c:380:6:tp_adjust	22
+../BSP/TOUCH/touch.c:499:9:tp_init	12

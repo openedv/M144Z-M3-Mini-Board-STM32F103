@@ -1,0 +1,22 @@
+16:00:43 **** Incremental Build of configuration Debug for project 29_2_led_flash_app ****
+make -j16 all 
+arm-none-eabi-gcc -o "29_2_led_flash_app.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\gittest\m144-m3-mini-board-stm32f103\example\29_2_led_flash_app\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="29_2_led_flash_app.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 29_2_led_flash_app.elf
+ 
+arm-none-eabi-size  29_2_led_flash_app.elf 
+arm-none-eabi-objdump -h -S 29_2_led_flash_app.elf  > "29_2_led_flash_app.list"
+arm-none-eabi-objcopy  -O ihex 29_2_led_flash_app.elf  "29_2_led_flash_app.hex"
+arm-none-eabi-objcopy  -O binary 29_2_led_flash_app.elf  "29_2_led_flash_app.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4996	     20	   1572	   6588	   19bc	29_2_led_flash_app.elf
+Finished building: default.size.stdout
+ 
+Finished building: 29_2_led_flash_app.hex
+Finished building: 29_2_led_flash_app.bin
+Finished building: 29_2_led_flash_app.list
+ 
+ 
+ 
+
+16:00:45 Build Finished. 0 errors, 0 warnings. (took 1s.788ms)
+

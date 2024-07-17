@@ -1,0 +1,23 @@
+17:22:38 **** Incremental Build of configuration Debug for project 14_dma ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../../../libraries/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../../libraries/Drivers/STM32F1xx_HAL_Driver/Inc -I../../../libraries/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../../libraries/Drivers/CMSIS/Include -I../BSP/LED -I../BSP/KEY -I../BSP/LCD -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "14_dma.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\m144-m3-mini-board-stm32f103\example\14_dma\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="14_dma.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 14_dma.elf
+ 
+arm-none-eabi-size  14_dma.elf 
+arm-none-eabi-objdump -h -S 14_dma.elf  > "14_dma.list"
+   text	   data	    bss	    dec	    hex	filename
+  53344	    516	   8140	  62000	   f230	14_dma.elf
+arm-none-eabi-objcopy  -O ihex 14_dma.elf  "14_dma.hex"
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objcopy  -O binary 14_dma.elf  "14_dma.bin"
+Finished building: 14_dma.list
+Finished building: 14_dma.hex
+ 
+ 
+Finished building: 14_dma.bin
+ 
+
+17:22:43 Build Finished. 0 errors, 0 warnings. (took 4s.762ms)
+

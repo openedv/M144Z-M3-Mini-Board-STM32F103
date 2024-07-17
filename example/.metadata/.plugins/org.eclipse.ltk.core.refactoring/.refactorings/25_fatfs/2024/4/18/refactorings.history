@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;25_fatfs/24_sd.ioc&apos; to &apos;25_fatfs.ioc&apos;" description="Rename resource &apos;24_sd.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="24_sd.ioc" name="25_fatfs.ioc" stamp="1714381041410" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;25_fatfs/24_sd.ioc&apos; to &apos;25_fatfs.ioc&apos;" description="Rename resource &apos;24_sd.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="24_sd.ioc" name="25_fatfs.ioc" stamp="1714441925595" updateReferences="false"/>
+</session>

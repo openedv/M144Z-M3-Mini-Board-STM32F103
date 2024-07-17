@@ -1,0 +1,31 @@
+16:35:52 **** Incremental Build of configuration Debug for project 23_malloc ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../../../libraries/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../../libraries/Drivers/STM32F1xx_HAL_Driver/Inc -I../../../libraries/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../../libraries/Drivers/CMSIS/Include -I../BSP/LED -I../BSP/KEY -I../BSP/LCD -I../../../ATK_Middlewares/MALLOC -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:58: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint8_t *' {aka 'unsigned char *'} [-Wformat=]
+  155 |               sprintf((char *)paddr, "SRAMIN: Addr: 0x%08X", p_sramin);
+      |                                                       ~~~^   ~~~~~~~~
+      |                                                          |   |
+      |                                                          |   uint8_t * {aka unsigned char *}
+      |                                                          unsigned int
+      |                                                       %08hhn
+arm-none-eabi-gcc -o "23_malloc.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\m144-m3-mini-board-stm32f103\example\23_malloc\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="23_malloc.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 23_malloc.elf
+ 
+arm-none-eabi-size  23_malloc.elf 
+arm-none-eabi-objdump -h -S 23_malloc.elf  > "23_malloc.list"
+arm-none-eabi-objcopy  -O ihex 23_malloc.elf  "23_malloc.hex"
+arm-none-eabi-objcopy  -O binary 23_malloc.elf  "23_malloc.bin"
+   text	   data	    bss	    dec	    hex	filename
+  53064	    504	  45832	  99400	  18448	23_malloc.elf
+Finished building: default.size.stdout
+ 
+Finished building: 23_malloc.hex
+Finished building: 23_malloc.bin
+Finished building: 23_malloc.list
+ 
+ 
+ 
+
+16:35:55 Build Finished. 0 errors, 1 warnings. (took 2s.856ms)
+
